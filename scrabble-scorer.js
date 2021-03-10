@@ -47,7 +47,7 @@ function initialPrompt() {
 let simpleScore = function(word) {
 simpleScore = word.length * 1
 
-return `Your points equal ${simpleScore}`;
+return simpleScore
  };
 
 //console.log(allOnePoint(initialPrompt()));
@@ -66,7 +66,7 @@ for (i=0; i< word.length; i++){
 
     }
   }
-  return  `Your points equal ${bonusScore}`
+  return  bonusScore
 
 };
 
@@ -93,7 +93,7 @@ let scrabbleScore = function(word){
   for (i=0; i<word.length; i++){
     points += Number(newPointStructure[word[i]])
   }
-  return `Your points equal ${points}.`
+  return points
 }
 let scrabbleObject = {
   name: "Scrabble",
